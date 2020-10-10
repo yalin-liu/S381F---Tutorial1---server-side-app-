@@ -7,7 +7,7 @@ This tutorial demonstrates how to deploy a simple Node.js app to IBM Cloud.  The
 2. Download the sample app to your *home* directory.
 ```
 cd ~
-git clone https://github.com/raymondwcs/ibmcloud
+git clone https://github.com/leungmanfai/ibmcloud
 ```
 3. It is always a good idea to verify that the app is working fine in your local machine *before* deploying it to the cloud.
 
@@ -100,5 +100,5 @@ Deleting app rs202009011306 in org comps?????@study.ouhk.edu.hk / space dev as c
 OK
 ```
 ## What's Next?
-Follow the instructions to deploy [`express-weather`](https://github.com/raymondwcs/ibmcloud/tree/master/express-weather#express-weather---a-simple-server-side-app) to IBM Cloud.
+Follow the instructions to deploy [`express-weather`](https://github.com/leungmanfai/ibmcloud/tree/master/express-weather#express-weather---a-simple-server-side-app) to IBM Cloud.
 # ibmcloud
