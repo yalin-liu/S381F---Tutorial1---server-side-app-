@@ -1,16 +1,15 @@
 # Getting Started with Heroku (a cloud platform)
-This tutorial demonstrates how to deploy a simple Node.js app to 'Heroku'.  
-The app you are going to deploy is a server-side app that responds to HTTP `GET` requests and returns a simple text message `Hello World!`
+This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The app you are going to deploy is `a server-side app (Node.js)` that responds to HTTP GET requests and returns a simple text message **Hello World!**
 
 ## Preparation
-1. Create a **free** account at https://www.heroku.com/.  Write down your ID and password.
+1. Create a **free** Heroku account at "https://www.heroku.com/".  Write down your `login email` and `password`.
 
-2. Download the sample app to your *home* directory.
+2. Download the sample app to your **home** directory.
 ```
 cd ~
 git clone https://github.com/leungmanfai/ibmcloud
 ```
-3. It is always a good idea to verify that the app is working fine in your local machine *before* deploying it to the cloud.
+3. It is always a good idea to verify that the app is working fine in your local machine **before** deploying it to the cloud.
 
 Go into the folder containing the server-side app.
 ```
