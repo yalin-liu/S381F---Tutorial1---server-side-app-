@@ -4,6 +4,7 @@ This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The
 ## Preparation
 ### 1. Create a **free** Heroku account at "https://www.heroku.com/".  
 Write down your `login email` and `password`.
+
 ### 2. Open a terminal in local machine (Linux+Ubuntu).
 Install the Heroku Command Line Interface (CLI). 
 
@@ -16,12 +17,12 @@ Check the git version to verify your installation.
 $ git --version
 git version 2.26.0
 ```
-### 3. Download the sample app to your **home** directory
+### 3. Download the sample app to your **home** directory.
 ```
 $ cd ~
 $ git clone https://github.com/yalin-liu/cloudapp.git
 ```
-### 4. Test the app in local machine 
+### 4. Test the app in local machine. 
 Go into the folder containing the server-side app.
 ```
 $ cd ~/cloudapp/helloworld
@@ -42,11 +43,7 @@ Open http://localhost:8099 in your web browser.
 
 ## Deploy the app to Heroku
 ### 1. Create a cloud app (where your local app will be deployed) in Heroku. 
-Write down the `unique name` for your app. 
-
-The App link on Heroku are named https://XXXXXXXX.herokuapp.com/ where XXXXXXXX is the name of your app.
-
-I use `cloudapp381` as the name of my app in this tutorial.  If the deployment is successful, you will be able to see your app running at `http://cloudapp381.mybluemix.net`.
+Write down the `unique name` for your app. The App link on Heroku will be https://XXXXXXXX.herokuapp.com/ where XXXXXXXX is the name of your app.
 
 ### 2. Access the local folder containing the app.  
 Remove the app's dependencies (the `node_modules` folder).
@@ -64,7 +61,7 @@ Check the Heroku version.
 heroku --version
 ```
 
-### 4. Deploy (upload) your app to the cloud app in Heroku
+### 4. Deploy (upload) your app to the cloud app in Heroku.
 Initialize git repository inside your working directory and connect that to your Heroku app using the second command with your app name.
 ```
 $ git init
@@ -103,22 +100,19 @@ It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for
 ### 5. Test your app.  Open the URL shown in `routes` above in your web broswer. 
 In this tutorial, the URL is `https://cloudapp381.herokuapp.com/`.
 
-# Other Useful Commands
-## 1. Getting Started on Heroku with Node.js
-Refer to "https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app" and "https://medium.com/geekculture/deploy-node-applications-on-heroku-a89ed51e0a34".
-
-## 2. Git installation.
-Refer to "https://git-scm.com/download/linux" and "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git".
-
-## 3. Switch branches of a git repository from master to main and reploy the app.
-Refer to "https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main". 
+# Other Useful Commands.
+### [Switch branches of a git repository from master to main and reploy the app](https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main).
 ```
-git checkout -b main
-git branch -D master
-git push heroku main
+$ git checkout -b main
+$ git branch -D master
+$ git push heroku main
 ```
-
-
+### [Build your app and run it locally](https://devcenter.heroku.com/articles/deploying-nodejs).
+```
+$ npm install
+$ heroku local web
+```
+Your app should now be running on http://localhost:5000/.
 
 
 ## What's Next?
