@@ -6,23 +6,23 @@ This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The
 
 2. Download the sample app to your **home** directory.
 ```
-cd ~
-git clone https://github.com/yalin-liu/S381Fcloud.git
+$ cd ~
+$ git clone https://github.com/yalin-liu/cloudapp.git
 ```
 3. It is always a good idea to verify that the app is working fine in your local machine **before** deploying it to the cloud.
 
 Go into the folder containing the server-side app.
 ```
-cd ~/S381Fcloud/helloworld
+$ cd ~/cloudapp/helloworld
 ```
 Install the app's dependencies.
 ```
-npm install
+$ npm install
 ```
 
 Run the server app.
 ```
-npm start
+$ npm start
 ```
 4. Test your app by sending to it a HTTP `GET` request.  Open http://127.0.0.1:8099 in your web browser.
 5. Stop your app by pressing Ctrl-C in your terminal.
@@ -31,13 +31,22 @@ npm start
 ## Deploy to Heroku
 1. Make sure you are inside the folder containing the app.  Remove the app's dependencies (the `node_modules` folder).
 ```
-cd ~/S381Fcloud/helloworld
-rm -rf node_modules
+$ cd ~/cloudapp/helloworld
+$ rm -rf node_modules
 ```
-2. Login to Heroku cloud. Enter your ID and password when prompted. When prompted to **Select a region**, selet `us-south`
+2. Install the Heroku Command Line Interface (CLI). The Heroku CLI requires Git, please [install Git](https://git-scm.com/download/linux).
 ```
-bx login
-bx target --cf
+$ apt-get install git
+```
+3. Login to Heroku. Enter your email and password when prompted. When prompted to **Select a region**, selet `us-south`
+```
+$ heroku login
+heroku: Press any key to open up the browser to login or q to exit
+ ›   Warning: If browser does not open, visit
+ ›   https://cli-auth.heroku.com/auth/browser/***
+heroku: Waiting for login...
+Logging in... done
+Logged in as me@example.com
 ```
         
 3. Deploy (upload) your app to IBM Cloud
