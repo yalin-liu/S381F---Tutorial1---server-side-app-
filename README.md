@@ -5,7 +5,9 @@ This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The
 ### 1. Create a **free** Heroku account at "https://www.heroku.com/".  
 Write down your `login email` and `password`.
 ### 2. Open a terminal in local machine (Linux+Ubuntu).
-Install the Heroku Command Line Interface (CLI). The Heroku CLI requires Git, please install [Git](https://git-scm.com/download/linux).
+Install the Heroku Command Line Interface (CLI). 
+
+The Heroku CLI requires Git, please install Git.
 ```
 $ sudo apt-get install git
 ```
@@ -43,6 +45,7 @@ Open http://localhost:8099 in your web browser.
 Write down the `unique name` for your app. 
 
 The App link on Heroku are named https://XXXXXXXX.herokuapp.com/ where XXXXXXXX is the name of your app.
+
 I use `cloudapp381` as the name of my app in this tutorial.  If the deployment is successful, you will be able to see your app running at `http://cloudapp381.mybluemix.net`.
 
 ### 2. Access the local folder containing the app.  
@@ -51,15 +54,10 @@ Remove the app's dependencies (the `node_modules` folder).
 $ cd ~/cloudapp/helloworld
 $ rm -rf node_modules
 ```
+
 ### 3. Login to Heroku in local machine. 
 ```
 $ heroku login
-heroku: Press any key to open up the browser to login or q to exit
- ›   Warning: If browser does not open, visit
- ›   https://cli-auth.heroku.com/auth/browser/***
-heroku: Waiting for login...
-Logging in... done
-Logged in as me@example.com
 ```       
 Check the Heroku version.
 ```
@@ -72,7 +70,7 @@ Initialize git repository inside your working directory and connect that to your
 $ git init
 $ heroku git:remote -a unique-app-name-to-be-entered
 ```
-Add and commit to the Heroku master branch using the following commands.
+Add git commit to the Heroku master branch using the following commands.
 ```
 $ git add .
 $ git commit -m "your commit message"
@@ -100,12 +98,28 @@ remote: Verifying deploy... done.
 To https://git.heroku.com/cloudapp381.git
  * [new branch]      master -> master
 ```
-It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for your app in the cloud.  If things go well, you will see the following messages at the end of deployment.
+It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for your app in the cloud.  If things go well, you will see the following messages at the end of deployment. 
 
-### 4. 5. Test your app.  Open the URL shown in `routes` above in your web broswer. 
+### 5. Test your app.  Open the URL shown in `routes` above in your web broswer. 
 In this tutorial, the URL is `https://cloudapp381.herokuapp.com/`.
 
 # Other Useful Commands
+## 1. Getting Started on Heroku with Node.js
+Refer to "https://devcenter.heroku.com/articles/getting-started-with-nodejs#deploy-the-app" and "https://medium.com/geekculture/deploy-node-applications-on-heroku-a89ed51e0a34".
+
+## 2. Git installation.
+Refer to "https://git-scm.com/download/linux" and "https://git-scm.com/book/en/v2/Getting-Started-Installing-Git".
+
+## 3. Switch branches of a git repository from master to main and reploy the app.
+Refer to "https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main". 
+```
+git checkout -b main
+git branch -D master
+git push heroku main
+```
+
+
+
 
 ## What's Next?
 Follow the instructions to deploy [`express-weather`](https://github.com/leungmanfai/ibmcloud/tree/master/express-weather#express-weather---a-simple-server-side-app) to Heroku.
