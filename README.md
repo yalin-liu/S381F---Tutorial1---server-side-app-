@@ -109,4 +109,4 @@ $ git push heroku main
 ```
 
 ## What's Next?
-Follow the instructions to deploy [`express-weather`](express-weather/README.md) to Heroku.
+Follow the instructions to deploy [`express-weather`]([express-weather/README.md](https://github.com/yalin-liu/cloudapp/blob/1d4136ba314de582e6928bcb8fae830011aa37c4/express-weather/README.md)) to Heroku.
