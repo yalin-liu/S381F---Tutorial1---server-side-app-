@@ -42,7 +42,7 @@ Open http://localhost:8099 in your web browser.
 ### 1. Create a cloud app (where your local app will be deployed) in Heroku. 
 Write down the `unique name` for your app. 
 
-The App link on Heroku are named XXXXXXXX.mybluemix.net where XXXXXXXX is the name of your app.
+The App link on Heroku are named https://XXXXXXXX.herokuapp.com/ where XXXXXXXX is the name of your app.
 I use `cloudapp381` as the name of my app in this tutorial.  If the deployment is successful, you will be able to see your app running at `http://cloudapp381.mybluemix.net`.
 
 ### 2. Access the local folder containing the app.  
