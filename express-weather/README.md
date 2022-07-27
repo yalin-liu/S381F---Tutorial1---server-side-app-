@@ -12,7 +12,7 @@ This is a simple app written using the [Express.js](https://expressjs.com) frame
 ## Running the app locally
 1. Install the app's dependencies
 ```
-cd ~/ibmcloud/express-weather
+cd ~/cloudapp/express-weather
 npm install
 ```
 2. Run the app 
@@ -21,4 +21,4 @@ npm start
 ```
 3. Test your app by sending to it a HTTP `GET` request.  Open http://localhost:8099 in your web browser.
 
-[Deploy your app to IBM Cloud](https://github.com/leungmanfai/ibmcloud#deploy-to-ibm-cloud) if the app is working correctly.
+[Deploy your app to Heroku](https://github.com/yalin-liu/cloudapp.git) if the app is working correctly.
