@@ -1,5 +1,5 @@
 # Getting Started with Heroku (a cloud platform)
-This tutorial demonstrates how to deploy a simple Node.js app to Heroku.  
+This tutorial demonstrates how to deploy a simple Node.js app to 'Heroku'.  
 The app you are going to deploy is a server-side app that responds to HTTP `GET` requests and returns a simple text message `Hello World!`
 
 ## Preparation
