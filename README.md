@@ -101,12 +101,12 @@ It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for
 In this tutorial, the URL is `https://cloudapp381.herokuapp.com/`.
 
 # Other Useful Commands.
-### [Switch branches of a git repository from master to main and reploy the app](https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main).
+[Switch branches of a git repository from master to main and reploy the app](https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main).
 ```
 $ git checkout -b main
 $ git branch -D master
 $ git push heroku main
 ```
 
-## What's Next?
+# What's Next?
 Follow the instructions to deploy [express-weather/README.md](https://github.com/yalin-liu/cloudapp/blob/1d4136ba314de582e6928bcb8fae830011aa37c4/express-weather/README.md) to Heroku.
