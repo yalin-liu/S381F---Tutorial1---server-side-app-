@@ -1,5 +1,5 @@
 # Getting Started with Heroku (a cloud platform)
-This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The app you are going to deploy is `a server-side app (Node.js)` that responds to HTTP GET requests and returns a simple text message **Hello World!**
+This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The app you are going to deploy is `a server-side app (Node.js)` that responds to HTTP `GET` requests and returns a simple text message **Hello World!**
 
 ## Preparation
 1. Create a **free** Heroku account at "https://www.heroku.com/".  Write down your `login email` and `password`.
@@ -7,15 +7,14 @@ This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The
 2. Download the sample app to your **home** directory.
 ```
 cd ~
-git clone https://github.com/leungmanfai/ibmcloud
+git clone https://github.com/yalin-liu/S381Fcloud.git
 ```
 3. It is always a good idea to verify that the app is working fine in your local machine **before** deploying it to the cloud.
 
 Go into the folder containing the server-side app.
 ```
-cd ~/ibmcloud/helloworld
+cd ~/S381Fcloud/helloworld
 ```
-
 Install the app's dependencies.
 ```
 npm install
@@ -29,13 +28,13 @@ npm start
 5. Stop your app by pressing Ctrl-C in your terminal.
 
 
-## Deploy to IBM Cloud
+## Deploy to Heroku
 1. Make sure you are inside the folder containing the app.  Remove the app's dependencies (the `node_modules` folder).
 ```
-cd ~/ibmcloud/helloworld
+cd ~/S381Fcloud/helloworld
 rm -rf node_modules
 ```
-2. Login to IBM cloud. Enter your ID and password when prompted. When prompted to **Select a region**, selet `us-south`
+2. Login to Heroku cloud. Enter your ID and password when prompted. When prompted to **Select a region**, selet `us-south`
 ```
 bx login
 bx target --cf
