@@ -4,10 +4,8 @@ This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The
 ## Preparation
 ### 1. Create a **free** Heroku account at "https://www.heroku.com/".  
 Write down your `login email` and `password`.
-
 ### 2. Open a terminal in local machine (Linux+Ubuntu).
 Install the Heroku Command Line Interface (CLI). 
-
 The Heroku CLI requires Git, please install Git.
 ```
 $ sudo apt-get install git
@@ -39,19 +37,15 @@ Test your app by sending to it a HTTP `GET` request.
 ```
 Open http://localhost:8099 in your web browser.
 ```
-
-
 ## Deploy the app to Heroku
 ### 1. Create a cloud app (where your local app will be deployed) in Heroku. 
 Write down the `unique name` for your app. The App link on Heroku will be https://XXXXXXXX.herokuapp.com/ where XXXXXXXX is the name of your app.
-
 ### 2. Access the local folder containing the app.  
 Remove the app's dependencies (the `node_modules` folder).
 ```
 $ cd ~/cloudapp/helloworld
 $ rm -rf node_modules
 ```
-
 ### 3. Login to Heroku in local machine. 
 ```
 $ heroku login
@@ -60,7 +54,6 @@ Check the Heroku version.
 ```
 heroku --version
 ```
-
 ### 4. Deploy (upload) your app to the cloud app in Heroku.
 Initialize git repository inside your working directory and connect that to your Heroku app using the second command with your app name.
 ```
@@ -96,10 +89,8 @@ To https://git.heroku.com/cloudapp381.git
  * [new branch]      master -> master
 ```
 It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for your app in the cloud.  If things go well, you will see the following messages at the end of deployment. 
-
 ### 5. Test your app.  Open the URL shown in `routes` above in your web broswer. 
 In this tutorial, the URL is `https://cloudapp381.herokuapp.com/`.
-
 # Other Useful Commands.
 [Switch branches of a git repository from master to main and reploy the app](https://help.heroku.com/O0EXQZTA/how-do-i-switch-branches-from-master-to-main).
 ```
@@ -107,6 +98,5 @@ $ git checkout -b main
 $ git branch -D master
 $ git push heroku main
 ```
-
 # What's Next?
 Follow the instructions to deploy [express-weather/README.md](https://github.com/yalin-liu/cloudapp/blob/1d4136ba314de582e6928bcb8fae830011aa37c4/express-weather/README.md) to Heroku.
