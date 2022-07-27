@@ -107,13 +107,6 @@ $ git checkout -b main
 $ git branch -D master
 $ git push heroku main
 ```
-### [Build your app and run it locally](https://devcenter.heroku.com/articles/deploying-nodejs).
-```
-$ npm install
-$ heroku local web
-```
-Your app should now be running on http://localhost:5000/.
-
 
 ## What's Next?
-Follow the instructions to deploy [`express-weather`](https://github.com/leungmanfai/ibmcloud/tree/master/express-weather#express-weather---a-simple-server-side-app) to Heroku.
+Follow the instructions to deploy [`express-weather`](express-weather/README.md) to Heroku.
