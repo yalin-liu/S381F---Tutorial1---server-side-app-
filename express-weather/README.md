@@ -1,7 +1,7 @@
 # express-weather - A Simple Server-side App
 ## Overview
 This is a simple app written using the [Express.js](https://expressjs.com) framework.
-![Express-weather](graphics/381F-T01.jpg?raw=true "Weather App")
+![Express-weather](graphics/381F-T01-alin.jpg?raw=true "Weather App")
 
 ## Getting Started
 1. Obtain a free **API key** from [openweathermap.org](http://openweathermap.org)
