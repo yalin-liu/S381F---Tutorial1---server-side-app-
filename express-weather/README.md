@@ -12,14 +12,14 @@ This is a simple app written using the [Express.js](https://expressjs.com) frame
 ## Running the app locally
 1. Install the app's dependencies
 ```
-cd ~/cloudapp/express-weather
-npm install
+$ cd ~/cloudapp/express-weather
+$ npm install
 ```
-Attention: If the npm version is not matched, using `npm install node@<required version no.>` to change the node version.
+Attention: If the npm version is not matched, using `$ npm install node@<required version no.>` to change the node version.
 
 2. Run the app 
 ```
-npm start
+$ npm start
 ```
 3. Test your app by sending to it a HTTP `GET` request.  Open http://localhost:8099 in your web browser.
 
