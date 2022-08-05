@@ -15,6 +15,8 @@ This is a simple app written using the [Express.js](https://expressjs.com) frame
 cd ~/cloudapp/express-weather
 npm install
 ```
+Attention: If the npm version is not matched, using `npm install node@<required version no.>` to change the node version.
+
 2. Run the app 
 ```
 npm start
