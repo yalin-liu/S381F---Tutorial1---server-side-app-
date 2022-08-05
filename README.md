@@ -13,7 +13,15 @@ $ sudo apt-get install git
 Check the git version to verify your installation.
 ```
 $ git --version
-git version 2.26.0
+```
+Install with Ubuntu / Debian apt-get
+```
+$ curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+```
+This version doesn’t autoupdate. Update it manually via `apt-get`. 
+Check the heroku version to verify your installation.
+```
+$ heroku --version
 ```
 ### 3. Download the sample app to your **home** directory.
 ```
