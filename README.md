@@ -1,22 +1,55 @@
-# Learn to test an *server.js* app locally and deploy it to the cloud (Heroku)
+# Learn to test *server.js* apps locally and deploy it to the cloud (Heroku)
+This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. You are going to deploy two app samples, one is **helloworld** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**; and another is **express-weather** that also responds to a HTTP web and returns the weather in global regions.
 
 ## Preparations
-### Local System 
+### Local System: Virtual Machine + Ubuntu
 For lab computer, do the following operations:
-> i) Boot into the VMOS partition, ii) run VMWare Workstation Player, iii) play virtual machine, and iv) run the installed Ubuntu.
+> i) Boot into the VMOS partition, 
+> ii) run VMWare Workstation Player, 
+> iii) play virtual machine, and 
+> iv) run **the Ubuntu**.
 
 For your PC, do the followering operations:
-> i) Copy [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in lab computer, ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, iii) put [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in your PC, and iv) Run the Ubuntu.
+> i) Copy **the Ubuntu image** in lab computer (C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm), 
+> ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, 
+> iii) put the Ubuntu image in your PC, and 
+> iv) Run the Ubuntu.
+
+### Heroku Cloud Platform: account + app
+> Create a free account at "https://www.heroku.com/".  
+- Write down your `login email` and `password` for later use.
+
+> Create your own heroku app in Heroku platform.
+- Write down your `app-name` for later use. 
+- Heroku will generate a Web link "https://app-name.herokuapp.com/" for your app.
+
+### OpenWeather: account + API key
+> Create a free account at "https://home.openweathermap.org/users/sign_up"
+Write down your `login email` and `password` for later use.
+> Get `an API key` for later use.
+
+## Task 1 - Learn the basic Linux command in local system 
+### Create folder 
+i) Access the home of `user developer` and create the follower folder hierarchy 
+![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
+```
+cd ~developer
+mkdir comps381f cd comps381f
+mkdir lecture tutorial cd tutorial
+mkdir t01 t02
+```
+ii) Download `primer-dataset.json` at the following URL using your web browser.
+"https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json"
+
+### Updade `npm` in local system
+```
+npm install npm@latest
+```
 
 
-
-
+## Test the app locally
 # Getting Started with Heroku (a cloud platform)
-This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The app you are going to deploy is **a server-side app (Node.js)** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**
 
-## Preparation
-### 1. Create a **free** Heroku account at "https://www.heroku.com/".  
-Write down your `login email` and `password`.
 ### 2. Open a terminal in local machine (Linux+Ubuntu).
 Install the Heroku Command Line Interface (CLI). 
 The Heroku CLI requires Git, please install Git.
