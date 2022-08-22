@@ -1,4 +1,4 @@
-# Learn to test *server.js* apps locally and deploy it to the cloud (Heroku)
+# Learn to test *server.js* apps locally and deploy them to the cloud (Heroku)
 This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. You are going to deploy two app samples, one is **helloworld** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**; and another is **express-weather** that also responds to a HTTP web and returns the weather in global regions.
 
 ## Preparations
