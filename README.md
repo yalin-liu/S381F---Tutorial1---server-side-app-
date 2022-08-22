@@ -28,15 +28,14 @@ iv) Run the Ubuntu.
 - Write down your `login email` and `password` for later use.
 - Get `an API key` for later use.
 
-## Task 1 - Learn the basic Linux command in local system 
-### Create folder 
+## Task 1 - Learn the basic Linux commands in local system 
 > Access the home directory, show the path, and list all files in current folder
 ```
 cd ~
 pwd
 ls
 ```
-> Create the follower folder hierarchy 
+> Create the following folder hierarchy 
 
 ![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
 
@@ -45,8 +44,9 @@ mkdir comps381f cd comps381f
 mkdir lecture tutorial cd tutorial
 mkdir t01 t02
 ```
-> Download `primer-dataset.json` at the following URL using your web browser. Right click and save the json file.
-"https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json"
+> Download `primer-dataset.json` at the following URL using your web browser. 
+- "https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json"
+- Right click and save the json file.
 > Write down the linux command to place `primer-dataset.json` into the `t02` folder.
 ```
 mv ~/Downloads/primer-dataset.json ~/comps381f/tutorial/t02
@@ -55,16 +55,15 @@ mv ~/Downloads/primer-dataset.json ~/comps381f/tutorial/t02
 ```
 rm -rf ~developer/comps381f
 ```
-
-
+## Test the app samples locally
 ### Updade `npm` in local system
 ```
 npm install npm@latest
 ```
+### Test **helloworld** app locally
 
 
-## Test the app locally
-# Getting Started with Heroku (a cloud platform)
+## Getting Started with Heroku (a cloud platform)
 
 ### 2. Open a terminal in local machine (Linux+Ubuntu).
 Install the Heroku Command Line Interface (CLI). 
