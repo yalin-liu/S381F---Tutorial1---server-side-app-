@@ -1,3 +1,14 @@
+# Learn to test an *server.js* app locally and deploy it to the cloud (Heroku)
+
+## Preparations
+### Local System 
+For lab computer, 'Boot into the VMOS partition'->'Run VMWare Workstation Player'->'Play virtual machine'->'running the installed Ubuntu'.
+
+For your PC, 'Copy [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in lab computer'->'[Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC'->'put [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in your PC'->'Run VMWare Workstation Player'->'Play virtual machine'->'running the installed Ubuntu'.
+
+
+
+
 # Getting Started with Heroku (a cloud platform)
 This tutorial demonstrates **how to deploy a simple Node.js app to Heroku**. The app you are going to deploy is **a server-side app (Node.js)** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**
 
