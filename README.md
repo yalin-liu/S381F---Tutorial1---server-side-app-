@@ -28,7 +28,7 @@ iv) Run the Ubuntu.
 - Write down your `login email` and `password` for later use.
 - Get `an API key` for later use.
 
-## Task 1 - Learn the basic Linux commands in local system 
+## Task 1 - Learn the basic Linux commands in local machine 
 > Access the home directory, show the path, and list all files in current folder
 ```
 cd ~
@@ -40,23 +40,19 @@ ls
 ![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
 
 ```
-mkdir comps381f cd comps381f
-mkdir lecture tutorial cd tutorial
+mkdir comps381f 
+cd comps381f
+mkdir lecture tutorial 
+cd tutorial
 mkdir t01 t02
-```
-> Download `primer-dataset.json` at the following URL using your web browser. 
-- "https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json"
-- Right click and save the json file.
-> Write down the linux command to place `primer-dataset.json` into the `t02` folder.
-```
-mv ~/Downloads/primer-dataset.json ~/comps381f/tutorial/t02
 ```
 > Writen down the single linux command to delete the `comps381f` folder (and its subfolder).
 ```
 rm -rf ~developer/comps381f
 ```
-## Task 2 - Test the app samples in local system
-> Open a terminal in local machine (Linux+Ubuntu).
+
+## Task 2 - Test the app samples in local machine
+> Open a terminal in local machine (Ubuntu system).
 
 > Access the home directory and download the sample app to your **home** directory.
 ```
@@ -65,7 +61,7 @@ $ git clone https://github.com/yalin-liu/cloudapp.git
 ```
 
 > Test the `helloworld` app in local machine. 
-- Go into the folder containing the server-side app.
+- Go into the folder containing the `helloworld` app.
 ```
 $ cd ~/cloudapp/helloworld
 ```
@@ -80,12 +76,34 @@ $ npm start
 - Test your app by sending to it a HTTP `GET` request.  
 - Open "http://localhost:8099" in your web browser.
 
-## Task 3 - Deploy the app to Heroku 
+> Test the `express-weather` app in local machine. 
+- Go into the folder containing the `express-weather` app.
+```
+$ cd ~/cloudapp/express-weather
+```
+- Open `server.js` files
+```
+gedit server.js
+```
+- Add Open Weather `API` key to the `server.js` file
+- Install the app's dependencies.
+```
+npm install npm@latest
+```
+- Run the server app in local machine.
+```
+$ npm start
+```
+- Test your app by sending to it a HTTP `GET` request.  
+- Open "http://localhost:8099" in your web browser.
+
+
+## Task 3 - Deploy the `express-weather` app to Heroku 
 > Access the local folder containing the app.  
 
 > Remove the app's dependencies (the `node_modules` folder).
 ```
-$ cd ~/cloudapp/helloworld
+$ cd ~/cloudapp/express-weather
 $ rm -rf node_modules
 ```
 
@@ -134,6 +152,8 @@ To https://git.heroku.com/cloudapp381.git
 It takes 3-4 minutes to *upload* the source code, *provision* and *activate* for your app in the cloud.  If things go well, you will see the following messages at the end of deployment. 
 > Test your app.  Open the URL shown in `routes` above in your web broswer. 
 In this tutorial, the URL is `https://cloudapp381.herokuapp.com/`.
+
+
 
 
 # Other Useful Commands.
