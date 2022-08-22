@@ -31,24 +31,24 @@ iv) Run the Ubuntu.
 ## Task 1 - Learn the basic Linux commands in local machine 
 > Access the home directory, show the path, and list all files in current folder
 ```
-cd ~
-pwd
-ls
+$ cd ~
+$ pwd
+$ ls
 ```
 > Create the following folder hierarchy 
 
 ![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
 
 ```
-mkdir comps381f 
-cd comps381f
-mkdir lecture tutorial 
-cd tutorial
-mkdir t01 t02
+$ mkdir comps381f 
+$ cd comps381f
+$ mkdir lecture tutorial 
+$ cd tutorial
+$ mkdir t01 t02
 ```
 > Writen down the single linux command to delete the `comps381f` folder (and its subfolder).
 ```
-rm -rf ~developer/comps381f
+$ rm -rf ~developer/comps381f
 ```
 
 ## Task 2 - Test the app samples in local machine
@@ -65,9 +65,9 @@ $ git clone https://github.com/yalin-liu/cloudapp.git
 ```
 $ cd ~/cloudapp/helloworld
 ```
-- Install the app's dependencies.
+- Install the app's dependencies (the latest version of `npm`).
 ```
-npm install npm@latest
+$ npm install npm@latest
 ```
 - Run the server app in local machine.
 ```
@@ -83,12 +83,12 @@ $ cd ~/cloudapp/express-weather
 ```
 - Open `server.js` files
 ```
-gedit server.js
+$ gedit server.js
 ```
 - Add Open Weather `API` key to the `server.js` file
 - Install the app's dependencies.
 ```
-npm install npm@latest
+$ npm install npm@latest
 ```
 - Run the server app in local machine.
 ```
@@ -113,7 +113,7 @@ $ heroku login
 ```       
 Check the Heroku version.
 ```
-heroku --version
+$ heroku --version
 ```
 > Deploy (upload) your app to the cloud app in Heroku.
 Initialize git repository inside your working directory and connect that to your Heroku app using the second command with your app name.
