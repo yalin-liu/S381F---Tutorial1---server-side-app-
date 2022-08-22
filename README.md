@@ -2,9 +2,11 @@
 
 ## Preparations
 ### Local System 
-For lab computer, `Boot into the VMOS partition`->`Run VMWare Workstation Player`->`Play virtual machine`->`running the installed Ubuntu`.
+For lab computer, do the following operations:
+> i) Boot into the VMOS partition, ii) run VMWare Workstation Player, iii) play virtual machine, and iv) run the installed Ubuntu.
 
-For your PC, `Copy [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in lab computer`->`[Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC`->`put [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in your PC`->`Run the Ubuntu'.
+For your PC, do the followering operations:
+> i) Copy [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in lab computer, ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, iii) put [Ubuntu image](C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm.) in your PC, and iv) Run the Ubuntu.
 
 
 
