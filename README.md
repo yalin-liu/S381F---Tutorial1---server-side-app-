@@ -71,10 +71,6 @@ $ cd ~/cloudapp/helloworld
 ```
 - Install the app's dependencies.
 ```
-$ npm install
-```
-- Updade `npm` in local system
-```
 npm install npm@latest
 ```
 - Run the server app in local machine.
@@ -82,7 +78,7 @@ npm install npm@latest
 $ npm start
 ```
 - Test your app by sending to it a HTTP `GET` request.  
-- Open http://localhost:8099 in your web browser.
+- Open "http://localhost:8099" in your web browser.
 
 ## Task 3 - Deploy the app to Heroku 
 > Access the local folder containing the app.  
