@@ -4,16 +4,16 @@ This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. Y
 ## Preparations
 ### Local System: Virtual Machine + Ubuntu
 For lab computer, do the following operations:
-> i) Boot into the VMOS partition, 
-> ii) run VMWare Workstation Player, 
-> iii) play virtual machine, and 
-> iv) run **the Ubuntu**.
+i) Boot into the VMOS partition, 
+ii) run VMWare Workstation Player, 
+iii) play virtual machine, and 
+iv) run **the Ubuntu**.
 
 For your PC, do the followering operations:
-> i) Copy **the Ubuntu image** in lab computer (C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm), 
-> ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, 
-> iii) put the Ubuntu image in your PC, and 
-> iv) Run the Ubuntu.
+i) Copy **the Ubuntu image** in lab computer (C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm), 
+ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, 
+iii) put the Ubuntu image in your PC, and 
+iv) Run the Ubuntu.
 
 ### Heroku Cloud Platform: account + app
 > Create a free account at "https://www.heroku.com/".  
@@ -25,21 +25,37 @@ For your PC, do the followering operations:
 
 ### OpenWeather: account + API key
 > Create a free account at "https://home.openweathermap.org/users/sign_up"
-Write down your `login email` and `password` for later use.
-> Get `an API key` for later use.
+- Write down your `login email` and `password` for later use.
+- Get `an API key` for later use.
 
 ## Task 1 - Learn the basic Linux command in local system 
 ### Create folder 
-i) Access the home of `user developer` and create the follower folder hierarchy 
-![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
+> Access the home directory, show the path, and list all files in current folder
 ```
-cd ~developer
+cd ~
+pwd
+ls
+```
+> Create the follower folder hierarchy 
+
+![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
+
+```
 mkdir comps381f cd comps381f
 mkdir lecture tutorial cd tutorial
 mkdir t01 t02
 ```
-ii) Download `primer-dataset.json` at the following URL using your web browser.
+> Download `primer-dataset.json` at the following URL using your web browser. Right click and save the json file.
 "https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/primer-dataset.json"
+> Write down the linux command to place `primer-dataset.json` into the `t02` folder.
+```
+mv ~/Downloads/primer-dataset.json ~/comps381f/tutorial/t02
+```
+> Writen down the single linux command to delete the `comps381f` folder (and its subfolder).
+```
+rm -rf ~developer/comps381f
+```
+
 
 ### Updade `npm` in local system
 ```
