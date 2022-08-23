@@ -16,23 +16,22 @@ This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. Y
 - Write down your `login email` and `password` for later use.
 - Get `an API key` for later use.
 
-## Task 1 - Test the app samples in local machine
-> Open a terminal in local machine (Ubuntu system).
-
+## Test the app samples in local machine
+### Open a terminal in local machine (Ubuntu system).
 > Access the home directory and download the sample app to your **home** directory.
 ```
 $ cd ~
 $ git clone https://github.com/yalin-liu/cloudapp.git
 ```
 
-> Test the `helloworld` app in local machine. 
+### Test the `helloworld` app in local machine. 
 - Go into the folder containing the `helloworld` app.
 ```
 $ cd ~/cloudapp/helloworld
 ```
 - Install the app's dependencies (the latest version of `npm`).
 ```
-$ npm install npm@latest
+$ npm install
 ```
 - Run the server app in local machine.
 ```
@@ -41,7 +40,7 @@ $ npm start
 - Test your app by sending to it a HTTP `GET` request.  
 - Open "http://localhost:8099" in your web browser.
 
-> Test the `express-weather` app in local machine. 
+### Test the `express-weather` app in local machine. 
 - Go into the folder containing the `express-weather` app.
 ```
 $ cd ~/cloudapp/express-weather
@@ -63,14 +62,8 @@ $ npm start
 - Open "http://localhost:8099" in your web browser.
 
 
-## Task 2 - Deploy the `express-weather` app to Heroku 
+## Deploy the `express-weather` app to Heroku 
 > Access the local folder containing the app.  
-
-> Remove the app's dependencies (the `node_modules` folder).
-```
-$ cd ~/cloudapp/express-weather
-$ rm -rf node_modules
-```
 
 > Login to Heroku in local machine. 
 ```
