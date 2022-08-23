@@ -1,5 +1,5 @@
 # Learn to deploy *server.js* apps to the cloud (Heroku)
-This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. You are going to deploy two app samples, one is **helloworld** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**; and another is **express-weather** that also responds to a HTTP web and returns the weather in global regions.
+This tutorial demonstrates **how to deploy a simple server.js app to Heroku**.
 
 ## Preparations
 
@@ -29,7 +29,7 @@ $ git clone https://github.com/yalin-liu/cloudapp.git
 ```
 $ cd ~/cloudapp/helloworld
 ```
-- Install the app's dependencies (the latest version of `npm`).
+- Install the app's dependencies.
 ```
 $ npm install
 ```
