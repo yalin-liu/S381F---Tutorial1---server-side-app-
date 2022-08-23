@@ -1,19 +1,7 @@
-# Learn to test *server.js* apps locally and deploy them to the cloud (Heroku)
+# Learn to deploy *server.js* apps to the cloud (Heroku)
 This tutorial demonstrates **how to deploy a simple server.js app to Heroku**. You are going to deploy two app samples, one is **helloworld** that responds to HTTP `GET` requests and returns a simple text message **Hello World!**; and another is **express-weather** that also responds to a HTTP web and returns the weather in global regions.
 
 ## Preparations
-### Local System: Virtual Machine + Ubuntu
-For lab computer, do the following operations:
-i) Boot into the VMOS partition, 
-ii) run VMWare Workstation Player, 
-iii) play virtual machine, and 
-iv) run **the Ubuntu**.
-
-For your PC, do the followering operations:
-i) Copy **the Ubuntu image** in lab computer (C:\VM_Image\Ubuntu 64-bit 19.04.vmwarevm), 
-ii) [Install VMware WorkStation Player](www.vmware.com/asean/products/workstation-player/workstation-player-evaluation.html) in your PC, 
-iii) put the Ubuntu image in your PC, and 
-iv) Run the Ubuntu.
 
 ### Heroku Cloud Platform: account + app
 > Create a free account at "https://www.heroku.com/".  
@@ -28,30 +16,7 @@ iv) Run the Ubuntu.
 - Write down your `login email` and `password` for later use.
 - Get `an API key` for later use.
 
-## Task 1 - Learn the basic Linux commands in local machine 
-> Access the home directory, show the path, and list all files in current folder
-```
-$ cd ~
-$ pwd
-$ ls
-```
-> Create the following folder hierarchy 
-
-![image](https://user-images.githubusercontent.com/42903384/185931911-18732174-0343-46f3-8bd3-5966f667b76b.png)
-
-```
-$ mkdir comps381f 
-$ cd comps381f
-$ mkdir lecture tutorial 
-$ cd tutorial
-$ mkdir t01 t02
-```
-> Writen down the single linux command to delete the `comps381f` folder (and its subfolder).
-```
-$ rm -rf ~developer/comps381f
-```
-
-## Task 2 - Test the app samples in local machine
+## Task 1 - Test the app samples in local machine
 > Open a terminal in local machine (Ubuntu system).
 
 > Access the home directory and download the sample app to your **home** directory.
@@ -98,7 +63,7 @@ $ npm start
 - Open "http://localhost:8099" in your web browser.
 
 
-## Task 3 - Deploy the `express-weather` app to Heroku 
+## Task 2 - Deploy the `express-weather` app to Heroku 
 > Access the local folder containing the app.  
 
 > Remove the app's dependencies (the `node_modules` folder).
